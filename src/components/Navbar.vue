@@ -1,7 +1,7 @@
 <template>
-  <v-toolbar dark color="blue">
+  <v-toolbar dark color="blue" height="75px">
     <v-toolbar-side-icon @click="hamburgertoggle"></v-toolbar-side-icon>
-    <v-toolbar-title class="white--text">Zero Wasters</v-toolbar-title>
+    <v-toolbar-title class="white--text" size="20px">Zero Wasters </v-toolbar-title>
 
     <v-spacer></v-spacer>
     <div class="c-dropdown" v-show="hamburgerShow">
@@ -47,7 +47,6 @@
     },
     methods:{
         hamburgertoggle: function(){
-            console.log(this.hamburgerShow)
             this.hamburgerShow = !this.hamburgerShow
         }
     }
@@ -55,10 +54,22 @@
 </script>
 
 <style>
+.v-toolbar__title {
+    font-size: 20px
+}
 .c-dropdown{
     position: absolute;
     top: 53px;
     color: black;
     font-size: 20px;
+    width: 200px;
 }
+.c-dropdown li{
+    list-style: none;
+    padding: 5px 0;
+}
+.c-dropdown ul{
+    background-color: #DCDCDC;
+}
+
 </style>
