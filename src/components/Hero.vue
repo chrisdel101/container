@@ -46,7 +46,7 @@
         padding-top: 20px;
     }
     h2{
-        font-size: 30px;
+        font-size: 30px;    
     }
     h1 {
         font-size: 40px;

@@ -6,10 +6,18 @@
     <v-spacer></v-spacer>
     <div class="c-dropdown" v-show="hamburgerShow">
         <ul>
-            <li>How it works</li>
-            <li>Order</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li>How it works
+                <router-link to="/howitworks"></router-link>
+            </li>
+            <li>Order
+                <router-link to="/order"></router-link>
+            </li>
+            <li>About Us
+                <router-link to="/about"></router-link>
+            </li>
+            <li>Contact
+                <router-link to="/contact"></router-link>
+            </li>
         </ul>
     </div>
     <v-btn icon>

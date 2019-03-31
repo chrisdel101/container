@@ -1,20 +1,21 @@
 <template>
-    <div class="">
-        <Navbar></Navbar>
-        <Hero></Hero>
-    </div>
+        <div class="app-view">
+            <!-- <Navbar></Navbar> -->
+            <Home></Home>
+            <Order></Order>
+        </div>
 
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Home from './components/Home'
+// import Navbar from './components/Navbar'
 
 export default {
   name: 'App',
   components: {
-    Navbar,
-    Hero
+    // Navbar,
+    Home
   },
   data () {
     return {
